@@ -1,15 +1,15 @@
-import express from "express";
-import basicRouter from "./routes/basic";
+import express from 'express';
+import basicRouter from './routes/basic';
 
 const app = express();
 
 const PORT = process.env.PORT || 3002;
 
 //Routes
-app.use("/basic", basicRouter);
+app.use('/basic', basicRouter);
 
-app.get("/", (_, res) => {
-  res.send("Welcome to the Vacation planner!");
+app.get('/', (_, res) => {
+  res.send('Welcome to the Vacation planner!');
 });
 
 app.listen(PORT, () => {
